@@ -30,6 +30,12 @@ public class Box {
         return width * height * length;
     }
 
+    void setDiemens(double width, double height, double length) {
+        this.width = width;
+        this.height = height;
+        this.length = length;
+    }
+
     int compare(Box box) {
         double thisVolume = volume();
         double boxVolume = box.volume();
@@ -45,5 +51,9 @@ public class Box {
             result = 0;
         }
         return result;
+    }
+
+    Box increase(int i) {
+        return new Box(width * i, height * i, length * i);
     }
 }

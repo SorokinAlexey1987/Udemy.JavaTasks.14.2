@@ -3,7 +3,8 @@ public class Main {
         //Box box1 = new Box(10, 10, 10);
         //Box box2 = new Box(15, 20, 25);
         Box box1 = new Box(10);
-        Box box2 = new Box(box1);
+        Box box2 = box1.increase(1);
+        //box1.setDiemens(20, 20 ,20);
         //box1.showVolume();
         //box2.showVolume();
         double volume1 = box1.volume();
