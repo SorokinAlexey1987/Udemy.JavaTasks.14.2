@@ -3,7 +3,10 @@ public class Main {
         //Box box1 = new Box(10, 10, 10);
         //Box box2 = new Box(15, 20, 25);
         Box box1 = new Box(10);
-        Box box2 = box1.increase(1);
+        Box box2 = box1.increase(2);
+        //Box box3 = box1.addition(box2);
+        Box box3 = new Box(box1, box2);
+        box3.showVolume();
         //box1.setDiemens(20, 20 ,20);
         //box1.showVolume();
         //box2.showVolume();
@@ -27,6 +30,7 @@ public class Main {
         System.out.println(dog2.info());
         */
 
+        /*
         int result = box1.compare(box2);
         switch (result) {
             case -1:
@@ -39,5 +43,7 @@ public class Main {
                 System.out.println("1>2");
                 break;
         }
+        */
+
     }
 }
